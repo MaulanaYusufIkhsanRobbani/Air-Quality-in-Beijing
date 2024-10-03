@@ -33,7 +33,7 @@ Bagaimana tren perubahan kualitas udara di Beijing tiap bulannya?
 """)
 
 # Directory containing the dataset files
-directory = 'https://raw.githubusercontent.com/MaulanaYusufIkhsanRobbani/Air-Quality-in-Beijing/main/PRSA_Data_20130301-20170228'
+directory = 'https://github.com/MaulanaYusufIkhsanRobbani/Air-Quality-in-Beijing/tree/40861831c78979228358a5325c4c58710d6f2679/PRSA_Data_20130301-20170228'
 
 # Getting the list of all files in the directory
 all_files = os.listdir(directory)
