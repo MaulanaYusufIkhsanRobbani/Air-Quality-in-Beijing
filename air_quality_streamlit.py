@@ -33,7 +33,7 @@ Bagaimana tren perubahan kualitas udara di Beijing tiap bulannya?
 """)
 
 # Directory containing the dataset files
-directory = 'D:/Local Disk C/Python project/project/data_analytics_dicoding/PRSA_Data_20130301-20170228'
+directory = 'https://raw.githubusercontent.com/MaulanaYusufIkhsanRobbani/Air-Quality-in-Beijing/main/PRSA_Data_20130301-20170228'
 
 # Getting the list of all files in the directory
 all_files = os.listdir(directory)
@@ -260,7 +260,7 @@ beijing = gpd.GeoDataFrame(city_gr_mean_tot)
 
 # Memunculkan Beijing GeoJSON
 # Sumber file GeoJSON: https://github.com/echarts-maps/echarts-china-cities-js/blob/master/geojson/shape-only/beijing.geojson
-beijing_boundary = gpd.read_file('D:/Local Disk C/Python project/project/data_analytics_dicoding/beijing.geojson')
+beijing_boundary = gpd.read_file('https://raw.githubusercontent.com/MaulanaYusufIkhsanRobbani/Air-Quality-in-Beijing/main/beijing.geojson')
 st.write("""
     ### Pertanyaan 1:
     Bagaimana kualitas udara di distrik Beijing, RRC?
