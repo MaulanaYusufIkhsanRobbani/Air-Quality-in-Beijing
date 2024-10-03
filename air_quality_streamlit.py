@@ -32,27 +32,8 @@ Bagaimana kualitas udara di Beijing?
 Bagaimana tren perubahan kualitas udara di Beijing tiap bulannya?
 """)
 
-# Directory containing the dataset files
-directory = 'https://github.com/MaulanaYusufIkhsanRobbani/Air-Quality-in-Beijing/tree/40861831c78979228358a5325c4c58710d6f2679/PRSA_Data_20130301-20170228'
-
-# Getting the list of all files in the directory
-all_files = os.listdir(directory)
-
-# Filtering the list to include only CSV files
-csv_files = [file for file in all_files if file.endswith('.csv')]
-
-# Creating a list to store dataframes
-dataframes_list = []
-
-# Looping through each file and reading & appending it to the list of dataframes
-for file_name in csv_files:
-    file_path = os.path.join(directory, file_name)
-    df = pd.read_csv(file_path)
-    dataframes_list.append(df)
-
-# Combining all dataframes into one
-combined_df = pd.concat(dataframes_list)
-
+#
+combined_df = pd.read_csv('https://raw.githubusercontent.com/MaulanaYusufIkhsanRobbani/Air-Quality-in-Beijing/refs/heads/main/combined_df.csv')
 # Resetting the index of the combined dataframe
 combined_df.reset_index(drop=True, inplace=True)
 
