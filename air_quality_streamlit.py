@@ -181,7 +181,7 @@ def create_boxplots(data, indikator):
     plt.clf()
 def create_histogram(data, indikator):
     plt.figure(figsize=(18, 10))
-    sns.distplot(data[indikator], color='green', label=indikator)
+    sns.distplot(data[indikator], color='green')
     plt.tight_layout()
     plt.xticks(fontsize=14)
     plt.yticks(fontsize=14)
