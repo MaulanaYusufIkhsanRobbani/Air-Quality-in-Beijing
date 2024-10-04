@@ -168,7 +168,7 @@ st.write("""
          """)
 indikator = st.selectbox(
    "Pilih metrik yang ingin digunakan",
-   ('PM25',	'PM10',	'SO2',	'NO2',	'CO', 'O3' 'TEMP',	'PRES',	'DEWP',	'RAIN',	'WSPM')
+   ('PM25','PM10','SO2',	'NO2',	'CO', 'O3', 'TEMP', 'PRES','DEWP','RAIN','WSPM')
 )
 # Function to create boxplots for numerical columns to identify outliers visually
 def create_boxplots(data, indikator):
@@ -348,7 +348,7 @@ st.write("""
 # plot_time_series(data=city_gr_mean_month,indicator=indikator1)  
 multi_indikator3 = st.multiselect(
     "Pilih kolom yang ingin dilihat korelasinya",
-    ('PM25',	'PM10',	'SO2',	'NO2',	'CO', 'O3' 'TEMP',	'PRES',	'DEWP',	'RAIN',	'WSPM'), default=('PM25', 'PM10')
+    ('PM25',	'PM10',	'SO2',	'NO2',	'CO', 'O3', 'TEMP','PRES',	'DEWP',	'RAIN',	'WSPM'), default=('PM25', 'PM10')
 )
 # Peta korelasi antar kolom/variabel
 plt.figure(figsize=(12,12))
