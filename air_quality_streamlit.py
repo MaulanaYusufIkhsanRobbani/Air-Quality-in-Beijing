@@ -34,8 +34,6 @@ Bagaimana tren perubahan kualitas udara di Beijing tiap bulannya?
 
 #
 combined_df = pd.read_csv('https://raw.githubusercontent.com/MaulanaYusufIkhsanRobbani/Air-Quality-in-Beijing/refs/heads/main/combined_df.csv')
-# Resetting the index of the combined dataframe
-combined_df.reset_index(drop=True, inplace=True)
 
 # Renaming columns
 combined_df.rename(columns={'PM2.5': 'PM25'}, inplace=True)
